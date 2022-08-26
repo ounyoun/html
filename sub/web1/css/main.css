@@ -253,14 +253,14 @@ header .right_menu li {
 .event_box .event .imgbox2 {
     width: 835px;
     height: 315px;
-    background-image: url(/img/event01.png);
+    background-image: url("//html/sub/web1/img/event01.png");
 
 }
 
 .event_box .event .imgbox3 {
     width: 835px;
     height: 315px;
-    background-image: url(/img/event02.png);
+    background-image: url("//html/sub/web1/img/event01.png");
     background-position: center;
     border-bottom-right-radius: 130px;
 }
