@@ -1,0 +1,374 @@
+@charset "utf-8";
+
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@ font-face {
+    font-family: 'TmonMonsori';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR';
+    font-weight: 400;
+    line-height: 1;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+}
+
+header .headline {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 300px);
+    height: 95px;
+    line-height: 95px;
+    padding: 0 15px;
+    margin: 10px auto 0;
+}
+
+.main_visual {
+    margin-bottom: 180px;
+}
+.main_visual img {
+    width: 100%;}
+
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    padding: 0 25px;
+}
+
+
+header .right_menu {
+    display: flex;
+}
+
+header .right_menu li {
+    margin-left: 25px;
+}
+
+
+
+
+.bestitem {
+    width: 1440px;
+    height: 900px;
+    margin: 0 auto 180px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bestitem .mainitem {
+    width: 714px;
+    position: relative;
+}
+
+.bestitem .mainitem img {
+    object-fit: cover;
+}
+
+
+.bestitem .serveitem {
+    width: 714px;
+    
+}
+
+.bestitem .serveitem .itembox {
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+
+}
+.bestitem .serveitem .itembox .item {
+    width: 350px;
+    position: relative;
+    text-align: center;
+}
+.bestitem .serveitem .itembox .item:nth-of-type(1) {
+    background-color: #f4d3d3;
+}
+.bestitem .serveitem .itembox .item:nth-of-type(2) {
+    background-color: #eeb3b3;
+}
+
+
+.bestitem .serveitem .itembox .item .price{
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    text-align: left;
+}
+
+.bestitem .serveitem .itembox .item .icon {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.bestitem .serveitem .itembox .item .icon a {
+    margin-left: 10px;
+}
+
+.bestitem .serveitem .itembox .item > img {
+    margin-top: 45px;
+}
+
+.bestitem .serveitem .itembox .item .price span {
+    font-size: 25px;
+}
+.bestitem .serveitem .itembox .item .price p{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.bestitem .serveitem .titlebox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.bestitem .serveitem .titlebox div {
+    text-align: center;
+}
+
+.bestitem .serveitem .titlebox div h3 {
+    font-size: 50px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.bestitem .serveitem .titlebox div p {
+    color: #888;
+    font-size: 18px;
+    margin-bottom: 52px;
+}
+
+.bestitem .serveitem .titlebox div a {
+    background-color: black;
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 14px 39px;
+    border-radius: 40px;
+}
+
+.event_box {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.event_box .event {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.event_box .event .text_box span{
+    margin-bottom: 28px;
+    font-size: 25px;
+    color: #b5b5b5;
+}
+.event_box .event .text_box p{
+    margin-bottom: 23px;
+    font-size: 40px;
+    color: #333;
+}
+.event_box .event .text_box ul{
+    display: flex;
+}
+.event_box .event .text_box ul li {
+    margin-right: 13px;
+}
+
+.event_box .event .text_box ul li a {
+    display: block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 19px;
+    font-size: 15px;
+}
+
+
+.event_box .event .text_box ul li:nth-child(1) a{
+    background-color: #333;
+    color: #f2f2f2;
+}
+.event_box .event .text_box ul li:nth-of-type(2) a{
+    background-color: #f2f2f2;
+    color: #333;
+    border: 1px solid #f2f2f2;
+}
+
+.event_box .event .imgbox1 {
+    width: 835px;
+    height: 315px;
+    background-color:#000;
+    border-top-left-radius: 130px;
+    position: relative;
+    
+}
+
+
+.event_box .event .imgbox1 span {
+    position: absolute;
+    color: #b5b5b5;
+    font-size: 80px;
+    position: absolute;
+    left: 170px;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-family: 'TmonMonsori';
+}
+
+.event_box .event .imgbox1 img {
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.event_box .event .imgbox2 {
+    width: 835px;
+    height: 315px;
+    background-image: url(/img/event01.png);
+
+}
+
+.event_box .event .imgbox3 {
+    width: 835px;
+    height: 315px;
+    background-image: url(/img/event02.png);
+    background-position: center;
+    border-bottom-right-radius: 130px;
+}
+
+.footer {
+    width: 100;
+    margin: 0 auto;
+}
+
+.footer .icon {
+    height: 170px;
+    width: 100%;
+    background-color:#f2f2f2;
+}
+
+.footer .icon div {
+    width: 1440px;
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.footer .icon img {
+    height: 80%;
+    margin: 15px;
+}
+
+.footer .agreement {
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: 120px;
+    line-height: 120px;
+}
+
+.footer .agreement div{
+    margin: 0 auto;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.footer .agreement div strong {
+    font-size: 25px;
+}
+
+.footer .agreement div ul {
+    display: flex;
+}
+
+.footer .agreement div ul li {
+    margin-right: 45px;
+}
+
+.info {
+    width: 100%;
+    height: 355px;
+    background-color: black;
+}
+
+.info .infobox {
+    background-color: black;
+    color: white;
+    width: 1000px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.info .infobox .call {
+    margin-right: 90px;
+}
+
+.info .infobox .sub .email {
+    position: relative;
+    width: 470px;
+    height: 40px;
+}
+
+
+.info .infobox .sub .email input[type="text"] {
+    width: 470px;
+    height: 40px;
+    border: 1px solid #333;
+    margin-bottom: 20px;
+    padding: 0 5px;
+}
+
+.info .infobox .sub .email a {
+    position: absolute;
+    right: 5px;
+    text-align: center;
+    width: 110px;
+    height: 35px;
+    line-height: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none;
+    color : white;
+    background-color: black;
+}
+
+.info .infobox .sub >p {
+    font-weight: bold;
+}
+
+.info .infobox .sub p {
+    color: rgb(94, 94, 94);
+    font-size: 13px;
+}

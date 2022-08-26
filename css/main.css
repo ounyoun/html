@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    line-height: 1;
+    color: #333;
+    font-family: 'S-CoreDream-3Light';
+}
+
+/* .cont03 웹사이트 */
+
+.cont03 {
+    width: calc(100% - 300px);
+    margin: 200px auto;
+}
+
+.cont03 .list {
+    display: flex;
+    justify-content: space-between; /* 행의 끝을 나란히 맞추다 */
+    height: 85vh;
+}
+
+.cont03 .list .item {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-inline: 10px;
+}
+
+/* 가상선택자 */
+.cont03 .list .item::before {
+    content: ''; /* 빈공간만듦 */
+    position: absolute;
+    left: 0;
+    bottom: -100%; 
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.548);
+    transition: 0.5s;
+}
+
+.cont03 .list .item:hover::before {
+    bottom: 0;
+}
+
+.cont03 .list .item:hover .info {
+    background-color: transparent; /* 투명 */
+    color: #fff;
+}
+
+.cont03 .list .item:hover .info a {
+    color: #333;
+}
+
+.cont03 .list .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cont03 .list .item .info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color:#fff;
+    width: 100%;
+    padding: 50px;
+    word-break: keep-all; /* 단어별 줄 바꿈 */
+    
+}
+
+.cont03 .list .item .info h4 {
+    font-size: 30px;
+    font-family: 'S-CoreDream-8Heavy';
+}
+
+.cont03 .list .item .info p {
+    /* margin-top: 7px;
+    margin-bottom: 20px; */
+    margin: 7px 0 20px;
+    line-height: 1.4; /* 글자크기의 1.4배만큼 간격 */
+}
+
+.cont03 .list .item .info .text li {
+    margin: 5px 0;
+}
+
+.cont03 .list .item .info .btn {
+    display: flex;
+    margin-top: 40px;
+}
+
+.cont03 .list .item .info .btn li {
+    margin-right: 10px;
+    background-color: #eee;
+    border-radius: 40px;
+}
+
+.cont03 .list .item .info .btn a {
+    height: 45px;
+    padding: 0 40px;
+    display: block;
+    line-height: 45px;
+    font-size: 14px;
+}
+/* a태그는 inline요소라서 글자크기 조절 안됨 */
+
+
+
