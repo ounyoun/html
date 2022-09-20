@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/main.css"/>
+ 	
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	
+  <!-- Swiper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+	<script>
+		$(function(){
+			//.main_visual
+      var swiper = new Swiper(".main_v", {
+        spaceBetween: 30, /* 슬라이드 사이 간격 */
+        centeredSlides: true,
+        // autoplay: { /* 자동슬라이드 */
+        //   delay: 2500, /* 2.5s 간격 */
+        //   disableOnInteraction: false,
+        // },
+        pagination: { /* 클릭했을때 다음페이지 */
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: { /* 좌우화살표 */
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+			/* .cont02 */
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3, /* 화면에서 보여질 슬라이드 갯수 */
+        spaceBetween: 20, /* 슬라이드간 간격 */
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        navigation: { /* 좌우화살표 */
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        }
+
+      });
+
+		}) //jquery end
+	</script>
+
+</head>
+<body>
+
+  <header>
+		<div>
+      <div class="logo">
+        <a href="#"><img src="img/logo.png" alt="o,ld_logo"/></a>
+      </div>   
+
+			<nav>
+				<ul>
+					<li><a href="#">O,ld! story</a></li>
+					<li><a href="#">Shop</a></li>
+					<li><a href="#">Best seller</a></li>
+					<li><a href="#">Community</a></li>
+				</ul>
+			</nav>
+		
+			<ul class="right_gnb">
+				<li><a href="#">LOGIN</a></li>
+				<li><a href="#">JOIN</a></li>
+				<li><a href="#">CART</a></li>
+				<li><a href="#">SEARCH</a></li>
+			</ul><!-- .right_gnb end -->
+		</div>
+	</header>
+
+	<section class="main_visual">
+    <!-- Swiper -->
+   <div class="swiper main_v">
+     <div class="swiper-wrapper">
+       <div class="swiper-slide">
+         <img src="img/mainVisual (1).jpg" alt="" />
+       </div> <!-- 1 -->
+       <div class="swiper-slide">
+         <img src="img/mainVisual (2).jpg" alt=""/>
+       </div> <!-- 2 -->
+       <div class="swiper-slide">
+         <img src="img/mainVisual (3).jpg" alt=""/>
+       </div> <!-- 3 -->
+     </div>
+     <div class="swiper-button-next"></div>
+     <div class="swiper-button-prev"></div>
+     <div class="swiper-pagination"></div>
+    </div>
+   <!-- Swiper JS -->
+ </section><!-- .main_visual end -->
+
+  <section class="cont01">
+    <div class="bestseller">
+      <div class="left_best">
+        <a href="#"><img src="img/bestSeller (1).png" alt=""/></a>
+      </div><!-- .left_best end -->
+      <div class="right_best">
+        <p>oh, Lolly day! oh, Happy day!</p>
+        <h3>BEST SELLER</h3>
+        <div class="itemlist">
+          <div class="item">
+            <a href="#"><img src="img/bestSeller (2).png" alt=""/></a>
+            <span>[Cup] O,LD! mug ver.1</span>
+            <span>14,000won</span>            
+          </div><!-- .item01 end -->   
+          <div class="item">
+            <a href="#"><img src="img/bestSeller (3).png" alt=""/></a>
+            <span>[Cup] 473ml glass_</br>good rest MNNS_cat</span>
+            <span>15,000won</span>
+          </div> <!-- .item02 end -->
+          <div class="circle">
+            <img src="img/circle.png" alt="circle"/>
+          </div><!-- .circle end -->
+        </div><!-- .itemlist end -->
+
+      </div><!-- .right_best end -->
+    </div>
+  </section> <!-- .cont01 end -->
+
+  <section class="contlist">
+
+    <div class="cont02">
+      <h3>NEW! HAPPIER MART</h3>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#"><img src="img/happier (1).png" alt=""/></a>
+            <span>8,500won</span>
+            <span>[Bag] HAPPIER MART bag_orange</span>
+          </div><!-- .item01 end -->
+          <div class="swiper-slide">
+            <a href="#"><img src="img/happier (2).png" alt=""/></a>
+            <span>8,500won</span>
+            <span>[Bag] HAPPIER MART bag_white</span>
+          </div><!-- .item02 end -->
+          <div class="swiper-slide">
+            <a href="#"><img src="img/happier (3).png" alt=""/></a>
+            <span>2,800won</span>
+            <span>[Pen] HAPPIER MART pen</span>
+          </div><!-- .item03 end -->
+          <div class="swiper-slide">
+            <a href="#"><img src="img/happier (4).png" alt=""/></a>
+            <span>45,000won</span>
+            <span>[Apparel] HAPPIER MART Sweatshirt</span>
+            <span></span>
+          </div><!-- .item04 end -->
+          <div class="swiper-slide">
+            <a href="#"><img src="img/happier (5).png" alt=""/></a>
+            <span>2,000won</span>
+            <span>[Poster] HAPPIER MART_ver.1</span>
+          </div><!-- .item05 end -->
+        </div><!-- .swiper-wrapper end -->
+      </div><!-- .swiper mySwiper end -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div><!-- .cont02 end -->
+
+    <div class="cont03">
+      <h3>O,LD! X I hate Monday</h3>
+      <div class="itemlist">
+        <div class="item">
+          <a href="#"><img src="img/hatemon (1).png" alt=""/></a>
+          <span>10,000won</span>
+          <span>[O,LD! X I hate Monday]</br>Socks_MNNS_ivory</span>
+        </div><!-- .item01 end -->
+        <div class="item">
+          <a href="#"><img src="img/hatemon (2).png" alt=""/></a>
+          <span>10,000won</span>
+          <span>[O,LD! X I hate Monday]</br>Socks_back message</span>
+        </div><!-- .item02 end -->
+        <div class="item">
+          <a href="#"><img src="img/hatemon (3).png" alt=""/></a>
+          <span>10,000won</span>
+          <span>[O,LD! X I hate Monday]</br>Socks_o,ld! happier</span>
+        </div><!-- .item03 end -->
+        <div class="item">
+          <a href="#"><img src="img/hatemon (4).png" alt=""/></a>
+          <span>10,000won</span>
+          <span>[O,LD! X I hate Monday]</br>socks_mascot</span>
+        </div><!-- .item04 end -->
+      </div><!-- .itemlist end -->
+      <div class="moreicon">
+        <a href="#"><img src="img/more_icon (2).png" alt=""/></a>
+      </div>
+      
+    </div><!-- .cont03 end -->
+
+    <div class="scroll">
+      <div>
+        OH, LOLLY DAY! <span>OH, HAPPY DAY! </span>
+        OH, LOLLY DAY! <span>OH, HAPPY DAY! </span>
+        OH, LOLLY DAY! <span>OH, HAPPY DAY! </span>
+        OH, LOLLY DAY! <span>OH, HAPPY DAY! </span>
+      </div>
+      <div>
+        OH, LOLLY DAY! <span>OH, HAPPY DAY! </span>
+        OH, LOLLY DAY! <span>OH, HAPPY DAY! </span>
+        OH, LOLLY DAY! <span>OH, HAPPY DAY! </span>
+        OH, LOLLY DAY! <span>OH, HAPPY DAY! </span>
+      </div>
+    </div><!-- .scroll end -->
+
+    <div class="cont04">
+      <div class="back">
+        <h3>O,LD! STORY</h3>
+      </div>
+      <div class="storylist">
+        <img src="img/story.png" alt=""/>
+        <div class="right_story">
+          <h4>O,LD! makes your life happier</h4>
+          <span>'oh, lolly day!' 와 함께하는 모든이의 일상이 언제나 'oh, happy day!' 이길 바라는마음으로 ‘행복’ 을 모티브로 하여 다양한 작업을 하고 있습니다. 일상속의 작은 물건들이 우리의 삶을 충분히 행복하게 만들 수 있다고 믿으며, 다양한 제품의 쓰임새와 필요성에 대해 연구와 시도를 꾸준히 하고 있습니다. 당신의 삶을 ‘더 행복하게’ 만드는, 친절하고 다정하며 쓸수록 공감이 되는 디자인을 하는 것이 오롤리데이의 방향성입니다.</span>
+          <a href="#"><img src="img/more_icon (1).png" alt=""/></a>
+        </div><!-- .right_story end -->
+      </div>
+    </div><!-- .cont04 end -->
+
+    <div class="cont05">
+      <h3>O,LD! TV</h3>
+      <p>오롤리데이의 유쾌한 유투브채널 구경하세요. 구독과 좋아요는 사랑입니다💛</p>
+      <div class="youtube_wrap"> <!-- 내가원하는사이즈 -->
+        <div class="youtube"> <!-- 비율조절 -->
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/mpRu6uOh8WI?autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!-- 상위 비율 위에 적용될 수 있도록 -->
+        </div> <!-- .youtube end -->
+    </div> <!-- .youtube_wrap end -->
+    </div><!-- .cont05 end -->
+
+    <div class="cont06">
+      <div class="footer">
+        <img src="img/logo.png" alt="로고"/>
+        <div class="footerlist">
+          <div class="cs">
+            <span>C/S</span>
+            <ul>
+              <li>02.000.0000</li>
+              <li>월-목 1pm - 6pm, 금 10am - 2pm</li>
+              <li>(토, 일, 공휴일은 쉬는날)</li>
+            </ul>
+          </div><!-- 01end -->
+          <div>
+            <span>COMPANY</span>
+            <ul>
+              <li>
+                <span>상호 (주)롤리조쓰컴퍼니</span>
+                <span>사업자등록번호 854-00-00000</span>
+              </li>
+              <li>
+                <span>통신판매업 신고 제2020-서울성동-00000호</span>
+                <span>[사업자정보확인]</span>
+              </li>
+              <li>
+                <span>전화 02-952-1011</span>
+                <span>주소 서울특별시 성동구 성수이로22길 61 (성수동2가) 5층</span>
+              </li>
+              <li>
+                개인정보관리책임자 오롤리 (ohlollyday@naver.com)
+              </li>
+            </ul>
+          </div><!-- 02 end -->
+          <div>
+            <span>BANK</span>
+            <ul>
+              <li>신한은행 140-000-000000</li>
+              <li>예금주 (주)롤리조쓰컴퍼니</li>
+            </ul>
+          </div><!-- 03 end -->
+          <div>
+            <span>CONTACT</span>
+            <ul>
+              <li>콜라보레이션, 입점, 강연 등 마케팅 협업 문의</li>
+              <li><a href="#"><img src="img/contact-2.png" alt=""/></a></li>
+            </ul>
+          </div><!-- 04 end -->
+        </div><!-- .footerlist end -->
+      </div> <!-- .footer end -->
+    </div><!-- .cont06 end -->
+  </section><!-- .contlist end -->
+
+</body>
+</html>

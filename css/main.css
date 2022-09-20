@@ -19,7 +19,7 @@ body {
   line-height: 1.4;
   color: #333;
   font-family: "Elice Digital Baeum", sans-serif; 
-  background-color: #F7EDE3;
+  background-color: rgb(245,248,240);
 }
 
 /* COMMON */
@@ -102,7 +102,7 @@ section.main_visual .inner h2 {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #F7EDE3;
+  background: rgb(245,248,240);
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -250,14 +250,14 @@ section.cont01 .mySwiper .item .info .btn li a {
 .cont03 {
 /*   width: calc(100% - 300px);
   margin: 200px auto; */
-
+  background-image: url(../img/Untitled-1.png);
   padding: 200px 0;
 }
 
 .cont03 .list {
   display: flex;
   justify-content: space-between; /* 행의 끝을 나란히 맞추다 */
-  height: 85vh;
+  height: 70vh;
 }
 
 .cont03 .list .item {
