@@ -351,12 +351,9 @@ section.cont04 {
   padding: 200px 0;
 }
 
-section.cont04 .inner {}
 section.cont04 .inner .title { 
   text-align: center;
 }
-section.cont04 .inner .title h3 {}
-section.cont04 .inner .title p{}
 
 section.cont04 .inner .list {
   display: flex;
@@ -380,8 +377,6 @@ section.cont04 .inner .list >a .info h4 {
   font-size: 20px;
   margin-bottom: 7px;
 }
-section.cont04 .inner .list >a .info p {}
-
 /* .cont05 나의 소개 */
 .cont05 {
   padding: 200px 0;
